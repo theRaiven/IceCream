@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="IceCream.App/IceCream.App.csproj" />
+  <Project Path="IceCream.Core/IceCream.Core.csproj" />
+</Solution>
