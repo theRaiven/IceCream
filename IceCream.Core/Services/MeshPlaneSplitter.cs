@@ -189,10 +189,9 @@ public sealed class MeshPlanEPSlitter
         Vector3D ab = b - a;
         Vector3D ac = c - a;
 
-        double doubledAreaSquared = ab.Cross(ac).LengthSquared;
-        double limit = EPS * EPS;
+        double doubledArea = ab.Cross(ac).Length;
 
-        return doubledAreaSquared <= limit;
+        return doubledArea <= EPS;
     }
     /// <summary>
     /// Добавляет треугольник в сетку.
